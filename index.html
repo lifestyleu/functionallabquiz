@@ -19,13 +19,13 @@
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--charcoal); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 0 16px 60px; }
-.logo-wrap { width: 100%; max-width: 680px; padding: 28px 0 8px; text-align: center; }
+.logo-wrap { width: 100%; max-width: 680px; padding: 20px 0 6px; text-align: center; }
 .logo-wrap img { height: 60px; width: auto; opacity: 0.85; }
-.site-header { width: 100%; max-width: 680px; padding: 8px 0 0; text-align: center; }
-.eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose); margin-bottom: 14px; }
+.site-header { width: 100%; max-width: 680px; padding: 4px 0 0; text-align: center; }
+
 .site-header h1 { font-family: "Cormorant Garamond", serif; font-size: clamp(28px,6vw,44px); font-weight: 400; line-height: 1.15; color: var(--charcoal); margin-bottom: 12px; }
 .site-header h1 em { font-style: italic; color: var(--rose); }
-.subtitle { font-size: 15px; color: var(--muted); font-weight: 300; line-height: 1.6; max-width: 460px; margin: 0 auto 28px; }
+.subtitle { font-size: 15px; color: var(--muted); font-weight: 300; line-height: 1.6; max-width: 460px; margin: 0 auto 20px; }
 .screen { display: none; width: 100%; max-width: 580px; }
 .screen.active { display: block; }
 .card { background: #fff; border-radius: 20px; padding: 44px 40px; box-shadow: 0 4px 40px var(--shadow); position: relative; overflow: hidden; margin-bottom: 20px; }
@@ -35,10 +35,10 @@ body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--cha
 .intro-icon { font-size: 36px; margin-bottom: 16px; display: block; text-align: center; }
 .card h2 { font-family: "Cormorant Garamond", serif; font-size: clamp(24px,5vw,34px); font-weight: 500; line-height: 1.25; color: var(--charcoal); margin-bottom: 14px; text-align: center; }
 .card h2 em { font-style: italic; color: var(--rose); }
-.card > p { font-size: 15px; color: var(--muted); line-height: 1.7; max-width: 400px; margin: 0 auto 28px; font-weight: 300; text-align: center; }
+.card > p { font-size: 15px; color: var(--muted); line-height: 1.7; max-width: 420px; margin: 0 auto 28px; font-weight: 300; text-align: center; }
 .intro-features { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 32px; }
 .intro-feat { font-size: 13px; color: var(--muted); }
-.btn-primary { background: linear-gradient(135deg, var(--rose), var(--rose-deep)); color: white; border: none; border-radius: 12px; padding: 17px 44px; font-family: "DM Sans", sans-serif; font-size: 15px; font-weight: 500; letter-spacing: 0.04em; cursor: pointer; transition: all 0.25s ease; display: block; margin: 0 auto; }
+.btn-primary { background: linear-gradient(135deg, var(--rose), var(--rose-deep)); color: white; border: none; border-radius: 12px; padding: 17px 44px; font-family: "DM Sans", sans-serif; font-size: 15px; font-weight: 500; letter-spacing: 0.04em; cursor: pointer; transition: all 0.25s ease; display: block; margin: 0 auto; min-height: 52px; }
 .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(196,113,74,0.35); }
 .progress-wrap { width: 100%; max-width: 580px; margin: 0 auto 28px; }
 .progress-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
@@ -50,8 +50,8 @@ body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--cha
 .q-number { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--rose); margin-bottom: 10px; font-weight: 500; }
 .q-text { font-family: "Cormorant Garamond", serif; font-size: clamp(20px,4vw,26px); font-weight: 500; line-height: 1.3; color: var(--charcoal); margin-bottom: 28px; }
 .options { display: flex; flex-direction: column; gap: 11px; }
-.opt { background: var(--warm-white); border: 1.5px solid #EDE5DF; border-radius: 12px; padding: 15px 18px; text-align: left; cursor: pointer; font-family: "DM Sans", sans-serif; font-size: 14.5px; font-weight: 400; color: var(--charcoal); line-height: 1.5; transition: all 0.2s ease; display: flex; align-items: center; gap: 13px; width: 100%; }
-.opt:hover { border-color: var(--rose); background: #FEF7F4; transform: translateX(3px); }
+.opt { background: var(--warm-white); border: 1.5px solid #EDE5DF; border-radius: 12px; padding: 15px 18px; text-align: left; cursor: pointer; font-family: "DM Sans", sans-serif; font-size: 14.5px; font-weight: 400; color: var(--charcoal); line-height: 1.5; transition: all 0.2s ease; display: flex; align-items: center; gap: 13px; width: 100%; min-height: 52px; -webkit-tap-highlight-color: transparent; }
+.opt:hover { border-color: var(--rose); background: #FEF7F4; }
 .opt.sel { border-color: var(--rose); background: linear-gradient(135deg, #FEF0E9, #FDF5F1); color: var(--rose-deep); font-weight: 500; }
 .opt-dot { width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid #D9CCC6; flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
 .opt.sel .opt-dot { background: var(--rose); border-color: var(--rose); }
@@ -62,6 +62,9 @@ body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--cha
 .btn-next.on:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(196,113,74,0.35); }
 .qblock { display: none; }
 .qblock.active { display: block; }
+.result-card { background: #fff; border-radius: 20px; padding: 44px 40px; box-shadow: 0 4px 40px var(--shadow); position: relative; overflow: hidden; text-align: center; }
+.result-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--rose), var(--sage), var(--rose-deep)); }
+@media(max-width:520px) { .result-card { padding: 28px 20px; } }
 .result-label { display: inline-block; background: #FEF0E9; border: 1px solid #F2D9CC; border-radius: 99px; padding: 5px 16px; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--rose-deep); font-weight: 500; margin-bottom: 18px; }
 .result-headline { font-family: "Cormorant Garamond", serif; font-size: clamp(24px,5vw,34px); font-weight: 500; line-height: 1.25; color: var(--charcoal); margin-bottom: 20px; }
 .result-headline em { font-style: italic; color: var(--rose); }
@@ -71,6 +74,16 @@ body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--cha
 .t-quote { font-family: "Cormorant Garamond", serif; font-size: 17px; font-style: italic; color: var(--charcoal); line-height: 1.6; margin-bottom: 8px; }
 .t-author { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rose); font-weight: 500; }
 .rdesc { font-size: 15px; color: #5A4E48; line-height: 1.8; text-align: left; margin-bottom: 16px; font-weight: 300; }
+.insight-box { background: #FAF6F0; border: 1.5px solid #EDE5DF; border-radius: 14px; padding: 22px 24px; text-align: left; margin-bottom: 24px; }
+.insight-box-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose-deep); font-weight: 600; margin-bottom: 14px; }
+.insight-item { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
+.insight-item:last-child { margin-bottom: 0; }
+.insight-dot { width: 8px; height: 8px; background: var(--rose); border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+.insight-item p { font-size: 14px; color: var(--charcoal); line-height: 1.6; }
+.insight-item p strong { font-weight: 600; color: var(--charcoal); }
+.philosophy-box { background: linear-gradient(135deg, #FEF0E9, #FAF6F0); border: 1.5px solid #F2D9CC; border-radius: 14px; padding: 22px 24px; text-align: left; margin-bottom: 24px; }
+.philosophy-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose-deep); font-weight: 600; margin-bottom: 10px; }
+.philosophy-box p { font-size: 14.5px; color: var(--charcoal); line-height: 1.7; }
 .action-box { background: var(--blush); border-radius: 14px; padding: 20px 22px; text-align: left; margin-bottom: 24px; }
 .action-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose-deep); font-weight: 600; margin-bottom: 8px; }
 .action-box p { font-size: 14.5px; color: var(--charcoal); line-height: 1.65; }
@@ -87,9 +100,28 @@ body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--cha
 .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(196,113,74,0.4); }
 .btn-retake { font-size: 13px; color: var(--muted); cursor: pointer; text-decoration: underline; background: none; border: none; font-family: "DM Sans", sans-serif; display: block; margin: 0 auto; }
 .btn-retake:hover { color: var(--rose); }
-.result-card { background: #fff; border-radius: 20px; padding: 44px 40px; box-shadow: 0 4px 40px var(--shadow); position: relative; overflow: hidden; text-align: center; }
-.result-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--rose), var(--sage), var(--rose-deep)); }
-@media(max-width:520px) { .result-card { padding: 28px 20px; } }
+
+  @media(max-width:480px) {
+    .logo-wrap { padding: 14px 0 4px; }
+    .logo-wrap img { height: 48px; }
+    .site-header h1 { font-size: 28px; margin-bottom: 8px; }
+    .subtitle { font-size: 14px; margin-bottom: 16px; }
+    .intro-badge { font-size: 11px; padding: 5px 12px; margin-bottom: 14px; }
+    .card { border-radius: 16px; }
+    .card h2 { font-size: 24px; }
+    .intro-features { gap: 10px; }
+    .btn-primary { width: 100%; padding: 16px 24px; }
+    .btn-next { padding: 14px 24px; font-size: 13px; }
+    .btn-cta { font-size: 14px; padding: 16px 18px; }
+    .insight-box { padding: 16px 16px; }
+    .philosophy-box { padding: 16px 16px; }
+    .action-box { padding: 16px 16px; }
+    .pod-links { gap: 8px; }
+    .pod-link { font-size: 11px; padding: 5px 11px; }
+    .progress-wrap { margin-bottom: 18px; }
+    .t-quote { font-size: 15px; }
+    .rdesc { font-size: 14px; }
+  }
 </style>
 </head>
 <body>
@@ -99,9 +131,8 @@ body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--cha
 </div>
 
 <header class="site-header">
-  <p class="eyebrow">Functional Health &middot; Root Cause Testing</p>
-  <h1>What&rsquo;s <em>Actually</em> Driving<br>Your Symptoms?</h1>
-  <p class="subtitle">Answer 5 quick questions and find out exactly which functional lab test your body is calling for right now.</p>
+  <h1>Bloated. Stuck. <em>Inflamed.</em><br>There&rsquo;s a Reason.</h1>
+  <p class="subtitle">Discover the functional lab test your body is calling for &mdash; in 2 minutes.</p>
 </header>
 
 <!-- INTRO -->
@@ -110,7 +141,7 @@ body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--cha
   <div class="card">
     <span class="intro-icon">&#128300;</span>
     <h2>Stop Guessing.<br><em>Start Testing.</em></h2>
-    <p>Most women have been told their labs look &ldquo;normal&rdquo; &mdash; but they still feel exhausted, inflamed, and stuck. This quiz points you toward the test that actually explains what&rsquo;s been going on inside your body.</p>
+    <p>Most women have been told their labs look &ldquo;normal&rdquo; &mdash; but they still feel exhausted, inflamed, and stuck. This quiz cuts through the noise and points you toward the test that actually explains what&rsquo;s been going on inside your body.</p>
     <div class="intro-features">
       <span class="intro-feat">5 simple questions</span>
       <span class="intro-feat">&nbsp;&middot;&nbsp; Personalized result</span>
@@ -141,22 +172,22 @@ body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--cha
       <p class="q-number">Question 01 of 05</p>
       <p class="q-text">What&rsquo;s your most disruptive daily symptom?</p>
       <div class="options">
-        <button class="opt" data-q="1" data-v="1"><span class="opt-dot"></span>I&rsquo;m exhausted no matter how much I sleep</button>
-        <button class="opt" data-q="1" data-v="1"><span class="opt-dot"></span>I feel wired, anxious, or crash hard by afternoon</button>
-        <button class="opt" data-q="1" data-v="2"><span class="opt-dot"></span>I&rsquo;m bloated, gassy, or my digestion is all over the place</button>
-        <button class="opt" data-q="1" data-v="3"><span class="opt-dot"></span>My mood, cycle, or skin feels completely out of control</button>
+        <button class="opt" data-q="1" data-v="1"><span class="opt-dot"></span>Exhaustion that doesn&rsquo;t improve with sleep</button>
+        <button class="opt" data-q="1" data-v="1"><span class="opt-dot"></span>Wired but tired &mdash; anxious, then crashing</button>
+        <button class="opt" data-q="1" data-v="1"><span class="opt-dot"></span>Stubborn weight that won&rsquo;t move no matter what I do</button>
+        <button class="opt" data-q="1" data-v="1"><span class="opt-dot"></span>Chronic bloating, digestive issues, or unpredictable gut</button>
       </div>
       <div class="nav-row"><button class="btn-next" id="n1">Next &rarr;</button></div>
     </div>
 
     <div class="qblock" id="q2">
       <p class="q-number">Question 02 of 05</p>
-      <p class="q-text">How would you describe your energy throughout the day?</p>
+      <p class="q-text">Which of these sounds most like you?</p>
       <div class="options">
-        <button class="opt" data-q="2" data-v="1"><span class="opt-dot"></span>Flat and low all day &mdash; no real peaks</button>
-        <button class="opt" data-q="2" data-v="1"><span class="opt-dot"></span>I used to have energy. Now it&rsquo;s just gone.</button>
-        <button class="opt" data-q="2" data-v="2"><span class="opt-dot"></span>It completely depends on how my gut feels that day</button>
-        <button class="opt" data-q="2" data-v="3"><span class="opt-dot"></span>It follows my cycle &mdash; some weeks fine, some weeks destroyed</button>
+        <button class="opt" data-q="2" data-v="1"><span class="opt-dot"></span>I&rsquo;ve tried everything and nothing works long term</button>
+        <button class="opt" data-q="2" data-v="1"><span class="opt-dot"></span>I eat well and exercise but my body just isn&rsquo;t responding</button>
+        <button class="opt" data-q="2" data-v="1"><span class="opt-dot"></span>My hormones feel completely out of whack</button>
+        <button class="opt" data-q="2" data-v="1"><span class="opt-dot"></span>My digestion is the root of most of my problems</button>
       </div>
       <div class="nav-row"><button class="btn-next" id="n2">Next &rarr;</button></div>
     </div>
@@ -167,32 +198,32 @@ body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--cha
       <div class="options">
         <button class="opt" data-q="3" data-v="1"><span class="opt-dot"></span>Multiple diets or protocols with inconsistent results</button>
         <button class="opt" data-q="3" data-v="1"><span class="opt-dot"></span>Supplements, adaptogens, or adrenal support</button>
-        <button class="opt" data-q="3" data-v="2"><span class="opt-dot"></span>Probiotics, gut supplements, or elimination diets</button>
-        <button class="opt" data-q="3" data-v="3"><span class="opt-dot"></span>Hormone support, seed cycling, or progesterone cream</button>
+        <button class="opt" data-q="3" data-v="1"><span class="opt-dot"></span>Probiotics, gut supplements, or elimination diets</button>
+        <button class="opt" data-q="3" data-v="1"><span class="opt-dot"></span>Hormone support, seed cycling, or progesterone cream</button>
       </div>
       <div class="nav-row"><button class="btn-next" id="n3">Next &rarr;</button></div>
     </div>
 
     <div class="qblock" id="q4">
       <p class="q-number">Question 04 of 05</p>
-      <p class="q-text">Where do you feel most stuck right now?</p>
+      <p class="q-text">How long have you been dealing with this?</p>
       <div class="options">
-        <button class="opt" data-q="4" data-v="1"><span class="opt-dot"></span>My weight won&rsquo;t budge no matter what I do</button>
-        <button class="opt" data-q="4" data-v="1"><span class="opt-dot"></span>My hair, skin, nails, or sleep have noticeably changed</button>
-        <button class="opt" data-q="4" data-v="2"><span class="opt-dot"></span>My gut is unpredictable and it affects everything else</button>
-        <button class="opt" data-q="4" data-v="3"><span class="opt-dot"></span>My cycle and hormones feel like they&rsquo;re running the show</button>
+        <button class="opt" data-q="4" data-v="1"><span class="opt-dot"></span>Years &mdash; I&rsquo;ve just accepted it as my new normal</button>
+        <button class="opt" data-q="4" data-v="1"><span class="opt-dot"></span>It got worse after a major stressor, illness, or life change</button>
+        <button class="opt" data-q="4" data-v="1"><span class="opt-dot"></span>It comes and goes but never fully resolves</button>
+        <button class="opt" data-q="4" data-v="1"><span class="opt-dot"></span>It&rsquo;s been gradually getting worse over the last few years</button>
       </div>
       <div class="nav-row"><button class="btn-next" id="n4">Next &rarr;</button></div>
     </div>
 
     <div class="qblock" id="q5">
       <p class="q-number">Question 05 of 05</p>
-      <p class="q-text">How long have you been dealing with this?</p>
+      <p class="q-text">What would feel like the biggest win for you?</p>
       <div class="options">
-        <button class="opt" data-q="5" data-v="1"><span class="opt-dot"></span>Years &mdash; I&rsquo;ve just accepted it as my new normal</button>
-        <button class="opt" data-q="5" data-v="1"><span class="opt-dot"></span>It got worse after a major stressor, illness, or life change</button>
-        <button class="opt" data-q="5" data-v="2"><span class="opt-dot"></span>It flares with food, travel, or stress &mdash; straight to my digestion</button>
-        <button class="opt" data-q="5" data-v="3"><span class="opt-dot"></span>It&rsquo;s tied to my cycle and has shifted over the last few years</button>
+        <button class="opt" data-q="5" data-v="1"><span class="opt-dot"></span>Finally understanding why I feel the way I feel</button>
+        <button class="opt" data-q="5" data-v="1"><span class="opt-dot"></span>Losing the stubborn weight and getting my energy back</button>
+        <button class="opt" data-q="5" data-v="1"><span class="opt-dot"></span>Getting my gut calm, flat, and predictable</button>
+        <button class="opt" data-q="5" data-v="1"><span class="opt-dot"></span>Balancing my hormones and feeling like myself again</button>
       </div>
       <div class="nav-row"><button class="btn-next" id="n5">See My Result &rarr;</button></div>
     </div>
@@ -205,61 +236,94 @@ body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--cha
   <div class="result-card" id="result-card"></div>
 </div>
 
-<!-- HIDDEN RESULT TEMPLATES -->
+<!-- RESULT TEMPLATE: HTMA (DEFAULT - energy/weight focused) -->
 <div id="tpl-htma" style="display:none">
   <div class="result-label">Your Recommended Starting Point</div>
-  <h2 class="result-headline">Your Body Has Been Sending Signals. <em>It&#8217;s Time to Finally Read Them.</em></h2>
+  <h2 class="result-headline">Your Minerals Are the Missing Piece. <em>This Is Where We Start.</em></h2>
   <div class="divider"></div>
   <span class="test-badge">HTMA &mdash; Hair Tissue Mineral Analysis</span>
   <div class="testimonial">
     <div class="t-quote">&#8220;I finally have an explanation for everything I&#8217;ve been feeling for years. The HTMA results made it all make sense &#8212; I wasn&#8217;t broken, I was depleted.&#8221;</div>
     <div class="t-author">&mdash; Sarah M. &mdash; Root Cause Reset Client</div>
   </div>
-  <p class="rdesc">Okay, so here&#8217;s what your answers are telling me &#8212; and I want you to really hear this. The exhaustion, the stubborn weight, the feeling that your body has just stopped responding? That&#8217;s not you failing. That&#8217;s your body running on empty, and it has been for a long time.</p>
-  <p class="rdesc">Hair Tissue Mineral Analysis &#8212; HTMA &#8212; is the test that finally shows us what&#8217;s happening at a cellular level. Not a snapshot of your bloodstream, but a real window into what your cells have been experiencing over months. Your mineral status, your metabolic rate, how your adrenals and thyroid are actually functioning, how your body is handling stress &#8212; all of it, in one report.</p>
-  <p class="rdesc">This is the data that makes everything click. The reason the diets didn&#8217;t work. The reason the supplements did nothing. The reason you feel worse even when you&#8217;re doing everything right. It&#8217;s not a mystery &#8212; it&#8217;s a mineral story your body has been trying to tell. HTMA is how we finally listen.</p>
+  <p class="rdesc">Here&#8217;s what your answers are telling me, and I want you to really sit with this for a second. The exhaustion, the weight that won&#8217;t budge, the feeling that your body has completely stopped responding no matter what you throw at it &#8212; that is not a willpower problem. That is not a discipline problem. That is a mineral problem. And it has probably been building for a long time.</p>
+  <p class="rdesc">Hair Tissue Mineral Analysis &#8212; HTMA &#8212; is the test that finally shows us what has been happening inside your cells. Not a one-moment snapshot of your bloodstream. A real, detailed window into your mineral status, your metabolic rate, how your adrenals and thyroid are actually functioning, and how your body has been responding to stress over months. This is the data that makes everything else click into place.</p>
+  <div class="insight-box">
+    <div class="insight-box-label">What HTMA Reveals That Standard Labs Miss</div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Mineral depletion patterns</strong> &#8212; low magnesium, zinc, and potassium are among the most common drivers of fatigue, weight resistance, and poor sleep that standard panels never test for.</p></div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Metabolic rate</strong> &#8212; HTMA reveals whether your metabolism is running fast, slow, or in a stressed holding pattern &#8212; which explains why eating less and exercising more often makes things worse, not better.</p></div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Adrenal and thyroid function</strong> &#8212; not through a single blood draw, but through cellular mineral ratios that show how these systems have been performing over time.</p></div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Stress patterns and nervous system load</strong> &#8212; your mineral ratios tell us whether your body is in a state of alarm, resistance, or exhaustion &#8212; and exactly what it needs to shift out of survival mode.</p></div>
+  </div>
+  <div class="philosophy-box">
+    <div class="philosophy-label">Why We Always Start Here</div>
+    <p>At Lifestyle U, we believe minerals are the foundation of everything &#8212; and we mean that literally. Your hormones cannot be produced without the right minerals. Your gut cannot heal without adequate zinc, magnesium, and trace minerals supporting the lining and the microbiome. Your metabolism cannot restore without the mineral cofactors that drive cellular energy production. No matter what your primary symptoms are, we always start with HTMA because it tells us what every other protocol needs to be built on. You cannot out-supplement, out-diet, or out-train a depleted mineral foundation. We fix the foundation first.</p>
+  </div>
   <div class="action-box">
     <div class="action-label">Your Action This Week</div>
-    <p>Don&#8217;t add another supplement without this data first. Write down your top three symptoms &#8212; the ones that show up every single day &#8212; and bring them to a strategy call. We&#8217;ll show you exactly what your HTMA would likely reveal and why this is the right place to start.</p>
+    <p>Write down your top three symptoms &#8212; the ones that show up every single day without fail &#8212; and bring them to a strategy call. We&#8217;ll walk you through exactly what your HTMA would likely reveal about your specific pattern and show you what a personalized mineral protocol would look like for your body.</p>
   </div>
 </div>
 
-<div id="tpl-gimap" style="display:none">
+<!-- RESULT TEMPLATE: GUT (still leads to HTMA) -->
+<div id="tpl-gut" style="display:none">
   <div class="result-label">Your Recommended Starting Point</div>
-  <h2 class="result-headline">Your Gut Is at the Center of Everything. <em>It&#8217;s Time to Look Inside.</em></h2>
+  <h2 class="result-headline">Your Gut Is Struggling. <em>And Minerals Are Why.</em></h2>
   <div class="divider"></div>
-  <span class="test-badge">GI Map &mdash; Comprehensive Stool Analysis</span>
+  <span class="test-badge">HTMA &mdash; Hair Tissue Mineral Analysis</span>
   <div class="testimonial">
-    <div class="t-quote">&#8220;I had no idea how much my gut was affecting everything else. Once we got the GI Map results, the whole picture finally made sense.&#8221;</div>
+    <div class="t-quote">&#8220;I had tried every gut protocol out there. Nothing stuck until we ran the HTMA first and saw just how depleted my minerals were. That was the piece I had been missing the entire time.&#8221;</div>
     <div class="t-author">&mdash; Jenna R. &mdash; Root Cause Reset Client</div>
   </div>
-  <p class="rdesc">What your answers are pointing to is something that conventional medicine almost never catches &#8212; and it&#8217;s been quietly driving your symptoms for longer than you probably realize. Your gut isn&#8217;t just about digestion. It&#8217;s connected to your hormones, your metabolism, your energy, your skin, your mood, your weight. All of it.</p>
-  <p class="rdesc">The GI Map is a comprehensive functional stool test that actually maps what&#8217;s living inside your gut microbiome. We&#8217;re talking bacterial imbalances, infections, parasites, gut permeability markers, inflammation levels, and digestive enzyme function. Things that no standard test has ever looked for &#8212; because standard tests weren&#8217;t designed to look this deep.</p>
-  <p class="rdesc">Your bloating isn&#8217;t random. Your symptoms aren&#8217;t in your head. There&#8217;s something specific driving all of it, and the GI Map is how we find out exactly what it is.</p>
+  <p class="rdesc">Your answers are clearly pointing toward your gut as a major driver of what you&#8217;re experiencing &#8212; and you&#8217;re right. Chronic bloating, unpredictable digestion, food sensitivities that seem to multiply over time, gut symptoms that no probiotic or elimination diet has ever fully resolved. These are real. They are not in your head. And they absolutely need to be addressed.</p>
+  <p class="rdesc">But here&#8217;s what most gut protocols completely miss &#8212; and why so many women cycle through them without getting lasting results. Your gut lining, your gut microbiome, and your digestive enzyme production all depend on minerals to function. Zinc is required to maintain the integrity of the gut lining. Magnesium drives the motility that keeps digestion moving. Trace minerals are essential for the immune function that regulates inflammation inside the gut. When minerals are depleted &#8212; and in most women dealing with chronic gut symptoms, they are &#8212; no gut healing protocol can do its job properly because the raw materials it needs are missing.</p>
+  <div class="insight-box">
+    <div class="insight-box-label">The Mineral-Gut Connection Most Practitioners Overlook</div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Zinc deficiency</strong> directly impairs gut lining integrity &#8212; meaning leaky gut cannot fully heal regardless of what else you do until zinc is restored to optimal levels.</p></div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Magnesium depletion</strong> slows gut motility and contributes to constipation, bloating, and the sluggish digestion that makes every meal feel like a gamble.</p></div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Copper imbalance</strong> disrupts the gut microbiome by feeding pathogenic bacteria and suppressing beneficial strains &#8212; one of the most overlooked drivers of dysbiosis.</p></div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Sodium and potassium ratios</strong> regulate the cellular energy that powers digestive enzyme production &#8212; when these are off, digestion becomes slow, incomplete, and reactive.</p></div>
+  </div>
+  <div class="philosophy-box">
+    <div class="philosophy-label">Why We Start With HTMA Before Any Gut Protocol</div>
+    <p>At Lifestyle U, we do eventually use the GI Map &#8212; a comprehensive functional stool test &#8212; to go deep into what is happening inside the gut microbiome. But we never start there. We start with HTMA because attempting an intensive gut healing protocol on a mineral-depleted body is like trying to rebuild a house with no foundation. The detox and die-off that gut healing produces has to be processed and cleared by systems that run on minerals. Without that foundation in place first, the protocol becomes harder on the body than it needs to be &#8212; and the results are always incomplete. We fix the mineral foundation first. Then we go into the gut. That order matters more than most people realize.</p>
+  </div>
   <div class="action-box">
     <div class="action-label">Your Action This Week</div>
-    <p>Start paying attention to when your symptoms flare &#8212; what you ate, how stressed you were, what time of day it hit. That pattern matters. Bring it to a strategy call and we&#8217;ll connect the dots between your experience and what a GI Map would likely show us.</p>
+    <p>Start tracking when your gut symptoms are worst &#8212; time of day, what you ate, your stress level, how your sleep was the night before. That pattern is data. Bring it to a strategy call and we&#8217;ll show you how HTMA gives us the foundation we need before we ever look deeper into your gut.</p>
   </div>
 </div>
 
-<div id="tpl-dutch" style="display:none">
+<!-- RESULT TEMPLATE: HORMONES (still leads to HTMA) -->
+<div id="tpl-hormones" style="display:none">
   <div class="result-label">Your Recommended Starting Point</div>
-  <h2 class="result-headline">Your Hormones Aren&#8217;t the Problem. <em>They&#8217;re the Symptom.</em></h2>
+  <h2 class="result-headline">Your Hormones Are Struggling. <em>But Minerals Are Driving It.</em></h2>
   <div class="divider"></div>
-  <span class="test-badge">DUTCH &mdash; Complete Hormone Panel</span>
+  <span class="test-badge">HTMA &mdash; Hair Tissue Mineral Analysis</span>
   <div class="testimonial">
-    <div class="t-quote">&#8220;Every doctor told me my hormones were fine. The DUTCH test showed a completely different story &#8212; and we finally had something real to work with.&#8221;</div>
+    <div class="t-quote">&#8220;I spent two years trying to fix my hormones directly. It wasn&#8217;t until we addressed my mineral deficiencies that my cycle actually started to regulate. The HTMA changed everything for me.&#8221;</div>
     <div class="t-author">&mdash; Amanda K. &mdash; Root Cause Reset Client</div>
   </div>
-  <p class="rdesc">Here&#8217;s what I want you to know before anything else: you are not crazy, you are not dramatic, and your hormones are not fine just because a standard blood test said so. Standard hormone testing measures levels at one moment in time. That tells us almost nothing about what&#8217;s actually going on.</p>
-  <p class="rdesc">The DUTCH test measures the full hormone picture &#8212; how your estrogen is being metabolized, what your cortisol is doing throughout the entire day, how your progesterone and testosterone are actually functioning, and whether your detox pathways are clearing your hormones properly. It&#8217;s the difference between knowing something is off and finally understanding why.</p>
-  <p class="rdesc">Your cycle, your mood, your skin, your sleep &#8212; these aren&#8217;t separate problems. They&#8217;re all speaking the same language. The DUTCH helps us understand what they&#8217;re saying.</p>
+  <p class="rdesc">Your answers are pointing strongly toward hormonal dysregulation &#8212; and everything you&#8217;re experiencing is real. The mood swings, the cycle irregularities, the skin changes, the feeling that your hormones are running the show and you have zero control over any of it. That is an incredibly exhausting and frustrating way to live. And the most important thing I can tell you right now is that it is not permanent, it is not inevitable, and it is not something you have to just manage for the rest of your life.</p>
+  <p class="rdesc">But here is what most hormone protocols miss entirely &#8212; and why so many women spend years cycling through hormone testing, bioidenticals, seed cycling, and supplements without ever getting the results they are looking for. Your hormones are not the root cause. They are the symptom. Hormones are produced, regulated, and cleared by systems that are entirely dependent on minerals. Progesterone production requires zinc. Thyroid hormone conversion requires selenium and iodine. Estrogen detoxification requires magnesium. Cortisol regulation requires sodium, potassium, and magnesium working in precise ratios. When those minerals are depleted &#8212; and in most women with hormone symptoms they are &#8212; no amount of hormone support will fully resolve what is happening.</p>
+  <div class="insight-box">
+    <div class="insight-box-label">How Minerals Drive Your Hormonal Health</div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Zinc</strong> is required for progesterone production and estrogen detoxification &#8212; low zinc is one of the most common hidden drivers of estrogen dominance and irregular cycles.</p></div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Magnesium</strong> regulates cortisol, supports liver detox of excess estrogen, and is essential for the deep sleep that allows hormone restoration to happen overnight.</p></div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Copper imbalance</strong> is directly linked to estrogen dominance, anxiety, and the wired-but-tired pattern that so many women describe as their defining hormone symptom.</p></div>
+    <div class="insight-item"><div class="insight-dot"></div><p><strong>Sodium and potassium ratios</strong> reflect adrenal function &#8212; and chronically dysregulated adrenals are one of the primary upstream drivers of sex hormone imbalance in women.</p></div>
+  </div>
+  <div class="philosophy-box">
+    <div class="philosophy-label">Why We Start With HTMA Before Hormone Testing</div>
+    <p>At Lifestyle U, we do use comprehensive hormone testing &#8212; including the DUTCH panel &#8212; for some clients at the right stage of their healing. But we never start there. We start with HTMA because your hormones cannot rebalance on a mineral-depleted foundation. Attempting to correct hormone levels without first restoring the mineral environment those hormones operate in is like trying to tune an instrument that has broken strings. The HTMA shows us the mineral foundation first &#8212; and in most cases, restoring that foundation produces dramatic hormone improvements before we ever need to go deeper. That is not an accident. That is the order this has to happen in to produce results that last.</p>
+  </div>
   <div class="action-box">
     <div class="action-label">Your Action This Week</div>
-    <p>Start tracking your symptoms in relation to your cycle &#8212; even if your cycle feels irregular or has changed. That pattern is information. Bring it to a strategy call and we&#8217;ll show you how the DUTCH would map your story to real, actionable data.</p>
+    <p>Start tracking your symptoms in relation to your cycle &#8212; even if your cycle has become irregular or has changed significantly over the years. Notice the patterns: energy, mood, bloating, skin, sleep. That information is incredibly valuable. Bring it to a strategy call and we&#8217;ll show you exactly how HTMA maps to your hormone picture and why it is always the right place to begin.</p>
   </div>
 </div>
 
+<!-- PODCAST TEMPLATE -->
 <div id="tpl-podcast" style="display:none">
   <div class="pod-section">
     <div class="pod-label">&#127911; Recommended Listening</div>
@@ -282,6 +346,7 @@ body { font-family: "DM Sans", sans-serif; background: #FAF6F0; color: var(--cha
 
 <script>
 var ans = {};
+var q1sel = null;
 
 document.getElementById('btn-start').addEventListener('click', function() {
   document.getElementById('s-intro').classList.remove('active');
@@ -294,9 +359,14 @@ for (var i = 0; i < opts.length; i++) {
   opts[i].addEventListener('click', function() {
     var q = this.getAttribute('data-q');
     var v = parseInt(this.getAttribute('data-v'));
+    if (q === '1') { q1sel = this.cellIndex || Array.prototype.indexOf.call(this.parentNode.children, this); }
     var siblings = document.querySelectorAll('.opt[data-q="' + q + '"]');
     for (var j = 0; j < siblings.length; j++) siblings[j].classList.remove('sel');
     this.classList.add('sel');
+    if (q === '1') {
+      var idx = Array.prototype.indexOf.call(this.parentNode.children, this);
+      ans['q1idx'] = idx;
+    }
     ans[q] = v;
     var nb = document.getElementById('n' + q);
     if (nb) nb.classList.add('on');
@@ -320,19 +390,33 @@ document.getElementById('n1').addEventListener('click', function() { goNext(1); 
 document.getElementById('n2').addEventListener('click', function() { goNext(2); });
 document.getElementById('n3').addEventListener('click', function() { goNext(3); });
 document.getElementById('n4').addEventListener('click', function() { goNext(4); });
+
 document.getElementById('n5').addEventListener('click', function() {
   if (!ans[5]) return;
-  var total = 0;
-  for (var k in ans) total += ans[k];
-  var key = total <= 7 ? 'htma' : total <= 11 ? 'gimap' : 'dutch';
+
+  var q1idx = ans['q1idx'];
+  var q2sel = document.querySelector('.opt[data-q="2"].sel');
+  var q2idx = q2sel ? Array.prototype.indexOf.call(q2sel.parentNode.children, q2sel) : 0;
+  var q5sel = document.querySelector('.opt[data-q="5"].sel');
+  var q5idx = q5sel ? Array.prototype.indexOf.call(q5sel.parentNode.children, q5sel) : 0;
+
+  var tpl = 'htma';
+  if ((q1idx === 3 && q2idx === 3 && q5idx === 2) || (q1idx === 3 && q5idx === 2)) {
+    tpl = 'gut';
+  } else if ((q1idx === 2 && q2idx === 2 && q5idx === 3) || (q2idx === 2 && q5idx === 3)) {
+    tpl = 'hormones';
+  }
+
   var rc = document.getElementById('result-card');
-  rc.innerHTML = document.getElementById('tpl-' + key).innerHTML
+  rc.innerHTML = document.getElementById('tpl-' + tpl).innerHTML
     + document.getElementById('tpl-podcast').innerHTML
     + '<a href="https://www.lifestyleucoaching.ca/rootcausequiz-1" target="_blank" class="btn-cta">Learn How We Can Help &rarr;</a>'
     + '<button class="btn-retake" id="btn-retake">&larr; Retake the quiz</button>';
+
   document.getElementById('s-quiz').classList.remove('active');
   document.getElementById('s-result').classList.add('active');
   window.scrollTo(0, 0);
+
   document.getElementById('btn-retake').addEventListener('click', function() {
     ans = {};
     var allOpts = document.querySelectorAll('.opt');
